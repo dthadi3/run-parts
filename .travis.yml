@@ -22,8 +22,10 @@ matrix:
       env: COVERAGE=codecov
 #Power jobs
     - perl: "5.24-thr"
+      arch: ppc64le
       env: COVERAGE=coveralls
     - perl: "5.20-thr"
+      arch: ppc64le
       env: COVERAGE=codecov
   allow_failures:
     - perl: blead
